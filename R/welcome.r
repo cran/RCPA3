@@ -43,7 +43,7 @@ welcome <- function(reset=FALSE)
     slowConsolePrint("Use the setwd() function to change your working directory.\n\n")
     slightpause()
     slowConsolePrint("This package contains four datasets (debate, nes, states, and world) and many functions.\n")
-    slowConsolePrint("To see a list of all objects in this package, enter ls(\"package:rcpa3\")\n\n")
+    slowConsolePrint("To see a list of all objects in this package, enter ls(\"package:RCPA3\")\n\n")
     
     slowConsolePrint("You can enter welcome(reset=TRUE) to clear workspace objects and restore default graphical parameters. ")
     slowConsolePrint("For help with this function, or any other R function, type ? followed by the function's name, or help(function_name)\n\n")
@@ -55,7 +55,7 @@ welcome <- function(reset=FALSE)
       # slightpause()
       
     slowConsolePrint("If you want to play Widget Factory, just type widgetFactory() then press enter.\n\n")
-    message("We hope you enjoying using the rcpa3 package!\n")
+    message("We hope you enjoying using the RCPA3 package!\n")
     slightpause()
     
     if(reset==TRUE)

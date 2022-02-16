@@ -242,7 +242,8 @@ logregC <- function(formula, w, data, digits=3, orci=FALSE, fit.stats=FALSE,
     if(printC==TRUE & k==2) 
     {
       imagename <- paste("logregC.plot.", unclass(Sys.time()), ".png", sep="")
-      grDevices::png(filename=imagename, width=4, height=4, units="in", type="cairo", pointsize=8, res=300, antialias="default")
+      grDevices::png(filename=imagename, width=4, height=4, units="in", 
+                     type=getPNGtype(), pointsize=8, res=300, antialias="default")
       class(imagename) <- "image"
       printC(imagename)
     }

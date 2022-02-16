@@ -58,7 +58,8 @@ sampdistC = function(stat, se, t.df, plot.cdf=FALSE, ci=95, digits=3, printC=FAL
   if(printC==TRUE & k==2) 
   {
     imagename <- paste("sampdistC.plot.", unclass(Sys.time()), ".png", sep="")
-    grDevices::png(filename=imagename, width=4, height=3, units="in", type="cairo", pointsize=8, res=300, antialias="default")
+    grDevices::png(filename=imagename, width=4, height=3, units="in", 
+                   type=getPNGtype(), pointsize=8, res=300, antialias="default")
     class(imagename) <- "imageonly"
     printC(imagename)
   }

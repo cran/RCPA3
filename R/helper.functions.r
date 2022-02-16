@@ -148,7 +148,33 @@ fit.svyglm = function(svyglm, digits=3)
   return(results)
 }
 
+#' Get and return user's operating system type ("mac", "windows", or "linux")
+#' @noRd
+#' @keywords internal
+get_os <- function(){
+  sysinf <- Sys.info()
+  if (!is.null(sysinf)){
+    os <- sysinf['sysname']
+    if (os == 'Darwin')
+      os <- "mac"
+  } else { ## mystery machine
+    os <- .Platform$OS.type
+    if (grepl("^darwin", R.version$os))
+      os <- "mac"
+    if (grepl("linux-gnu", R.version$os))
+      os <- "linux"
+  }
+  tolower(os)
+}
 
+#' Get type to use for PNG graphics based on user's cairo support
+#' @noRd
+#' @keywords internal
+getPNGtype <- function()
+{
+  if((suppressWarnings(capabilities()["cairo"]))==TRUE) return("cairo")
+  else return(NULL)
+}
 
 #' Generate heading box to organize Console output
 #' @param text String of text to enclose in a heading box

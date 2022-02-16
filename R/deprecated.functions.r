@@ -150,8 +150,8 @@ describe <- function()
 
 
 #' @rdname deprecated.functions
-#' @description * **ddply** was used to generate summary statistics prior to graphing. The function is imported from the plyr package.  
-#' See \code{\link[plyr]{ddply}} documentation for details.
+#' @description * **ddply** was used to generate summary statistics prior to graphing. The function was imported from the plyr package.  
+#' See plyr package's ddply function documentation for details.
 #' @export
 #' @keywords internal
 #' @md
@@ -207,7 +207,7 @@ iplotC = function()
 
 #' @rdname deprecated.functions
 #' @description * **plotmeans** was used to plot mean values to visualize mean comparisons. This function was imported from the gplots package.  
-#' See \code{\link[gplots]{plotmeans}} documentation for details.
+#' See gplots package's plotmeans function documentation for details.
 #' @export
 #' @keywords internal
 #' @md

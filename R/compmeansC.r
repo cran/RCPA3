@@ -299,7 +299,8 @@ compmeansC <- function (dv, iv, w, z, data, digits=2, compact=FALSE, ivlabs, zla
       if(printC==TRUE & k==2) 
       {
         imagename <- paste("compmeansC.plot.", unclass(Sys.time()), ".png", sep="")
-        grDevices::png(filename=imagename, width=4, height=3, units="in", type="cairo", pointsize=8, res=300, antialias="default")
+        grDevices::png(filename=imagename, width=4, height=3, units="in", 
+                       type=getPNGtype(), pointsize=8, res=300, antialias="default")
         class(imagename) <- "image"
         printC(imagename)
       }
@@ -457,7 +458,8 @@ compmeansC <- function (dv, iv, w, z, data, digits=2, compact=FALSE, ivlabs, zla
       if(printC==TRUE & k==2) 
       {
         imagename <- paste("compmeansC.plot.", unclass(Sys.time()), ".png", sep="")
-        grDevices::png(filename=imagename, width=4, height=3, units="in", type="cairo", pointsize=8, res=300, antialias="default")
+        grDevices::png(filename=imagename, width=4, height=3, units="in", 
+                       type=getPNGtype(), pointsize=8, res=300, antialias="default")
         class(imagename) <- "image"
         printC(imagename)
       }

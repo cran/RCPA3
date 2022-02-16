@@ -361,7 +361,8 @@ if(!missing(x1)) check.variable(x1, vartype="numeric")
         if(printC==TRUE & k==2) 
         {
           imagename <- paste("testmeansC.plot.", unclass(Sys.time()), ".png", sep="")
-          grDevices::png(filename=imagename, width=3.6, height=1.5, units="in", type="cairo", pointsize=8, res=300, antialias="default")
+          grDevices::png(filename=imagename, width=3.6, height=1.5, units="in", 
+                         type=getPNGtype(), pointsize=8, res=300, antialias="default")
           class(imagename) <- "image"
           printC(imagename)
         }

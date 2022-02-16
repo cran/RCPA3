@@ -184,11 +184,15 @@ crosstabC <- function(dv, iv, w, z, data, digits=2, compact=FALSE, dvlabs, ivlab
   
   if(!missing(dvlabs))
   {
-    if(length(dvlabs) != length(response.options)) stop("Oops. The iv labels aren't the right length for this iv's values. There are ", length(dvlabs), " labels for ", length(response.options), " different values. To see how to use the dvlabs argument, try help(crosstabC).")
+    if(length(dvlabs) != length(response.options)) stop("Oops. The dv labels aren't the right length for this dv's values. There are ", length(dvlabs), " labels for ", length(response.options), " different values. To see how to use the dvlabs argument, try help(crosstabC).")
   }
   if(!missing(ivlabs))
   {
     if(length(ivlabs) != length(unique(stats::na.omit(iv)))) stop("Oops. The iv labels aren't the right length for this iv's values. There are ", length(ivlabs), " labels for ", length(unique(stats::na.omit(iv))), " different values. To see how to use the ivlabs argument, try help(crosstabC).")
+  }
+  if(!missing(zlabs))
+  {
+    if(length(zlabs) != length(unique(stats::na.omit(z)))) stop("Oops. The z variable labels aren't the right length for this z variable's values. There are ", length(zlabs), " labels for ", length(unique(stats::na.omit(z))), " different values. To see how to use the zlabs argument, try help(crosstabC).")
   }
   
   ############################### cross-tabs with no z variable
@@ -331,7 +335,8 @@ crosstabC <- function(dv, iv, w, z, data, digits=2, compact=FALSE, dvlabs, ivlab
       if(printC==TRUE & k==2) 
       {
         imagename <- paste("crosstabC.plot.", unclass(Sys.time()), ".png", sep="")
-        grDevices::png(filename=imagename, width=4, height=3, units="in", type="cairo", pointsize=8, res=300, antialias="default")
+        grDevices::png(filename=imagename, width=4, height=3, units="in", 
+                       type=getPNGtype(), pointsize=8, res=300, antialias="default")
         class(imagename) <- "image"
         printC(imagename)
       }
@@ -651,7 +656,8 @@ crosstabC <- function(dv, iv, w, z, data, digits=2, compact=FALSE, dvlabs, ivlab
       if(printC==TRUE & k==2) 
       {
         imagename <- paste("crosstabC.plot.", unclass(Sys.time()), ".png", sep="")
-        grDevices::png(filename=imagename, width=4, height=3, units="in", type="cairo", pointsize=8, res=300, antialias="default")
+        grDevices::png(filename=imagename, width=4, height=3, units="in", 
+                       type=getPNGtype(), pointsize=8, res=300, antialias="default")
         class(imagename) <- "image"
         printC(imagename)
       }

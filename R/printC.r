@@ -95,7 +95,7 @@ printC <- function(objx, file)
             # "</div>", 
             # this closes div that contains everything under banner
             cat("</div><BR CLEAR=ALL>", file = outputfile, append = TRUE)
-            citation <- utils::capture.output(citation("poliscidata"))
+            citation <- utils::capture.output(citation("RCPA3"))
             objx <- utils::capture.output(objx)
             cat("<p>----------------<BR><i>Notes:</i> Output generated ", format(Sys.time(), "%a %b %d %X %Y")," with R command RCPA3::", objx, ". </p>", file = outputfile, append = TRUE, sep="")
             # ", citation[2:7], ".
