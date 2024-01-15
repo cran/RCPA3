@@ -24,6 +24,9 @@
 #'   CIprop(x=lifex.knowimmig, w=wt, data=nes)
 #'   }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Confidence Intervals for Sample Proportions with RCPA3's CIprop Function](https://www.youtube.com/watch?v=uRukzm66BdI) 18:29 
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapter 8. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp. 184-186. ISBN-13: 978-1506379616; ISBN-10: 150637961.

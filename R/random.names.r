@@ -8,6 +8,8 @@
 #'    
 #'    random.names(10)
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @keywords internal
 #'
 random.names<-function(n)

@@ -46,6 +46,14 @@ No return
 \description{
 Difference of proportions test with optional sample weights. Reports P-value of two-tailed significance test. Currently limited to testing one response from one dataset. If you want to compare x1 from dataset1 and x2 from dataset2, you can create new dataframe to test as dv ~ iv where dv is vector of x1 and x2 values and iv is vector identifying the source (i.e. dataset1 and dataset2). If you want to compare different responses, such as "Yes" value for x1 and "Agree" value for x2, you will need to transform one of the variables so they have comparable response values.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=-2t2mwHeh_A}{Testing Proportions with RCPA3 Package's testpropsC Function} 27:33
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

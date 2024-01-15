@@ -25,7 +25,7 @@
 #' @param main (Optional) Main label for plot
 #' @param xlab (Optional) x-axislabel for plot
 #' @param ylab (Optional) y-axis label for plot
-#' @param z.palette (Optional) For bar and line plots with control variables (z). 
+#' @param z.palette (Optional) For bar and line plots with control variables (z), the name of HCL color palette to use. Default is "LightGrays". See `grDevices::hcl.pals` for palette names and more information. Also see <https://developer.r-project.org/Blog/public/2019/04/01/hcl-based-color-palettes-in-grdevices/> to view color palettes.
 #' @param legend.title (Optional) Title for legend shown if plot used with z argument.
 #' @return Returns a cross-tabulation
 #' @examples  
@@ -41,6 +41,12 @@
 #'   crosstabC(dv=death.penalty, iv=partyid3, w=wt, data=nes, z=gender, plot="line")
 #'   }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Create Cross-Tabulations to Make Comparisons with RCPA3's crosstabC Function](https://www.youtube.com/watch?v=lPmpsiKZ5rY) 13:31  
+#' * [Plots for Cross-Tabulations with RCPA3's crosstabC Function](https://www.youtube.com/watch?v=nwr52FIWBx4) 29:51  
+#' * [Making Controlled Comparisons with RCPA3's crosstabC Function](https://www.youtube.com/watch?v=UoXwVEQpiFo) 28:34  
+#' * [Conducting Chi-Square Test and Measuring Strength of Assovciation with RCPA3 Package's crosstabC Function](https://www.youtube.com/watch?v=EVTfgIBWDkE) 35:06  
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapters 4, 5, 7, 10. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp.85-97, 150-156, 215-231. ISBN-13: 978-1506379616; ISBN-10: 150637961.
@@ -392,7 +398,7 @@ crosstabC <- function(dv, iv, w, z, data, digits=2, compact=FALSE, dvlabs, ivlab
           
           if(missing(z.palette) & plot.response=="all") bar.colors <- grDevices::gray.colors(nrow(plotting.values), start=.1, end=.7)
           else if(missing(z.palette)) bar.colors <- "gray80"
-          else bar.colors <- grDevices::hcl.colors(1, palette=z.palette)
+          else bar.colors <- grDevices::hcl.colors(nrow(plotting.values), palette=z.palette)
           
           if(plot.response=="all") barplot.xlim <- c(0, (nrow(plotting.values)+1)*(ncol(plotting.values)+1))
           else barplot.xlim <- c(0, 1.2*length(plotting.values))

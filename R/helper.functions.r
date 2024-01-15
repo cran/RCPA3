@@ -1,8 +1,6 @@
 ##' @name helper.functions
 ##' @noRd
 ##' @title Functions that help user-facing functions but not called directly.
-##'
-
 
 #' Check value and generate custom message about problems
 #' @param msg Prompt to show user
@@ -14,7 +12,6 @@ ask <- function(msg = "Press <Enter> to continue: ", con = stdin())
   cat(msg)
   readLines(con = con, n = 1)
 }
-
 
 #' Check value and generate custom message about problems
 #' @param x Value to be checked (must be length 1)

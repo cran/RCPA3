@@ -29,6 +29,14 @@ None (makes a plot)
 Visualize expected sampling distributions for sample statistics. You can plot the probability and cumulative density functions for statistics based on either the normal distribution or a t-distribution.
 The \code{sampdistC} function also generates the confidence interval (default 95\%) for a sample statistic which is useful for obtaining the CI of a summary statistic (when you're not estimating it from the dataset yourself).
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=Tz5wlmo1Jzk}{Viewing Sampling Distributions with RCPA3's sampdistC Function} 21:51
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

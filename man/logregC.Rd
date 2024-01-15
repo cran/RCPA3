@@ -36,6 +36,14 @@ Returns a glm (unweighted models) or svyglm (weighted models) object.
 \description{
 Logistic regression analysis function with many useful features. Its standard output included a table of coefficients, table of deviance residuals, and summary of additional model information. Options include weighting observations, additional reports on odds ratios, ANOVA, multiple measures of model fit, proportional reduction in error, and diagnostic plots of residuals.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://youtu.be/tbFzTNtU8aw}{Logistic Regression Analysis with RCPA3 Package's logregC Function} 13:36
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

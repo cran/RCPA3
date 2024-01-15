@@ -18,6 +18,13 @@ No return to R. The formatted objx is outputted to a .html file in working direc
 Prints table or summary of results to a .html file in local working directory. Converting Console format tables to .html tables helps users quickly create publication- and presentation-ready tables. The .html file's name is displayed as Console message.
 Current date added to Table.Output.html file name to keep output organized. You can print output directly from Companion functions using \code{printC=TRUE} argument (where available).
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook Reference}{
 
 \itemize{

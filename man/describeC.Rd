@@ -23,6 +23,14 @@ Table of descriptive statistics
 \description{
 Prints a table of descriptive statistics for variable(s) specified with x argument. Works with variables measures at any level but output varies with level of measurement (e.g. you won't get standard deviation for a nominal variable). Option for weighting observations.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=QbMlUgwG1H4}{Generate Descriptive Statistics with RCPA3 Package's describeC Function} 17:40
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

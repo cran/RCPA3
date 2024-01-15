@@ -25,6 +25,9 @@
 #'    sortC(id=country, by=vdem.4cat, thenby=gini.index, descending=c(FALSE, TRUE), 
 #'          data=world, confirm=FALSE)
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Sort and View Case-Level Information with the sortC Function](https://www.youtube.com/watch?v=xdnaFE3kWeU) 12:22   
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapters 2, 6. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp. 122-123. ISBN-13: 978-1506379616; ISBN-10: 150637961.

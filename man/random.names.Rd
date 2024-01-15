@@ -15,6 +15,11 @@ A vector of surnames
 \description{
 Generates a random sample of surnames of any length. Surnames and probabilities from Census Bureau, see <https://www.census.gov/topics/population/genealogy/data/2010_surnames.html>. Used to illustrate random sampling methods.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+* [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more.
+}
+
 \examples{
    library(RCPA3)
    

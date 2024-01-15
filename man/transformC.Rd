@@ -41,6 +41,14 @@ A transformed version of x variable, a vector with the same length as x, unless 
 \description{
 Given a variable x, the \code{transformC} function generates and returns a tranformed version of x. For example, \code{transformC} can take a variable x and return standardized x, or the log of x.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=kYyfvzonFCs}{Transforming Variables with RCPA3 Package's transformC Function} 22:40
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

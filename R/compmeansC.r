@@ -41,6 +41,12 @@
 #'   compmeansC(dv=nes$ft.gay, iv=nes$gender, z=nes$partyid3, compact=TRUE, plot=TRUE)
 #'   }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Make Mean Comparisons with RCPA3's compmeansC Function](https://www.youtube.com/watch?v=ZuAsP0ZJuDk) 13:20, shows you how to use the RCPA3 Package's compmeansC function to compare values of an interval-level dependent variable across categories of an independent variable.  
+#' * [Plotting Means with RCPA3's compmeansC Function](https://www.youtube.com/watch?v=72ROwE9zGmg) 20:42  
+#' * [Making Controlled Mean Comparisons with RCPA3's compmeansC Function](https://www.youtube.com/watch?v=sGiwNUwljLc) 25:46  
+#' * [Analysis of Variance with RCPA3's compmeansC Function](https://www.youtube.com/watch?v=ssBhlAHWAa4) 8:58
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapters 4, 5, 7, 10. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp.85-97, 150-156. ISBN-13: 978-1506379616; ISBN-10: 150637961.

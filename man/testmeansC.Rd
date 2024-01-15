@@ -53,6 +53,14 @@ No return
 \description{
 Conducts one and two-sample difference of means tests (t-tests). Options for weighting observations, known population standard deviation, equal or unequal variances, paired observations.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=K3sve6O77fY}{Testing Means with RCPA3 Package's testmeansC Function} 12:22
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

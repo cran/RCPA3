@@ -38,6 +38,14 @@ A frequency distribution table of binned x variable values.
 \description{
 Generates frequency distribution table of binned values and a histogram to describe distribution of variable values.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=uQEHe8vAORI}{Generate Histograms with RCPA3 PAckages's histC Function}
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

@@ -15,6 +15,13 @@ No value returned
 \description{
 Welcomes users to RCPA3 package for \emph{An R Companion to Political Analysis, 3rd Edition} and provides basic information about using Companion functions and datasets.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook Reference}{
 
 \itemize{

@@ -1,6 +1,14 @@
 
+RCPA3 v1.2.1 (Release date: 2024-01-06)
+==============
 
-RCPA3 v1.1.1 (Release date: TBD)
+Changes:
+
+* Updated documentation files with links to streaming video tutorials for package functions
+
+
+
+RCPA3 v1.1.1 (Release date: 2022-02-08)
 ==============
 
 Minor  Changes:

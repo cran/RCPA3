@@ -38,6 +38,14 @@ No return, creates a plot.
 \description{
 Generates box plots for visual comparison of interval-level dependent variable's distribution across categories of independent variable. Includes option for weighting observations, modifying colors, variable widths. Box plot can be used to compare values of interval-level dependent variable by categories of an independent variable (a factor).
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://youtu.be/40bQJucHbY4}{Making Box Plots with RCPA3's boxplotC Function} 15:12, shows you how to use the RCPA3 Package's boxplotC function to create box plots that show the relationship between an interval-level dependent variables and a categorical independent variable.
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

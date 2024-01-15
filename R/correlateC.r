@@ -24,6 +24,9 @@
 #'               w=nes$wt, stats=TRUE)
 #'    }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Correlation Analysis with RCPA3's correlateC Function](https://www.youtube.com/watch?v=sYBywL4t1fY) 9:01  
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapter 11. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp. 240-244. ISBN-13: 978-1506379616; ISBN-10: 150637961.

@@ -44,6 +44,16 @@ Returns a lm or svyglm object.
 \description{
 Linear regression analysis function with many useful features. Standard output of results includes table of coefficients, table of residuals, and additional model information. Options for weighting observations, analysis of variance (ANOVA), performing post-estimation diagnostic tests, including testing normality of residuals and constant variance, and generating diagnostic plots of residuals.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=53NPD-BGvwU}{Bivariate Regression Analysis with RCPA3 Package's regC Function} 10:31
+\item \href{https://youtu.be/17Dxg5D3qtQ}{Multiple Regression Analysis with RCPA3 Package's regC Function} 14:55
+\item \href{https://youtu.be/97hoiYuQnl4}{Analyzing Regression Residuals with RCPA3 Package's regC Function} 12:41
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

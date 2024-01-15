@@ -10,6 +10,8 @@
 #' widgetFactory()
 #' }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook Reference:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapter 1. 
 #' @section Online Resource:

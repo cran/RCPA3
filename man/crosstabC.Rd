@@ -56,7 +56,7 @@ crosstabC(dv, iv, w, z, data, digits = 2, compact = FALSE, dvlabs, ivlabs,
 
 \item{ylab}{(Optional) y-axis label for plot}
 
-\item{z.palette}{(Optional) For bar and line plots with control variables (z).}
+\item{z.palette}{(Optional) For bar and line plots with control variables (z), the name of HCL color palette to use. Default is "LightGrays". See \code{grDevices::hcl.pals} for palette names and more information. Also see \url{https://developer.r-project.org/Blog/public/2019/04/01/hcl-based-color-palettes-in-grdevices/} to view color palettes.}
 
 \item{legend.title}{(Optional) Title for legend shown if plot used with z argument.}
 }
@@ -66,6 +66,17 @@ Returns a cross-tabulation
 \description{
 This is a workhorse function for analyzing the relationship between two variables measured at the nominal or ordinal-level (factors). Basic output is a cross-tabulation with column percentages and counts. Options include weighting observations, adding control variable for controlled cross-tabulation, several plotting options, conducting Chi-Square test of independence, and measuring strength of association.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=lPmpsiKZ5rY}{Create Cross-Tabulations to Make Comparisons with RCPA3's crosstabC Function} 13:31
+\item \href{https://www.youtube.com/watch?v=nwr52FIWBx4}{Plots for Cross-Tabulations with RCPA3's crosstabC Function} 29:51
+\item \href{https://www.youtube.com/watch?v=UoXwVEQpiFo}{Making Controlled Comparisons with RCPA3's crosstabC Function} 28:34
+\item \href{https://www.youtube.com/watch?v=EVTfgIBWDkE}{Conducting Chi-Square Test and Measuring Strength of Assovciation with RCPA3 Package's crosstabC Function} 35:06
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

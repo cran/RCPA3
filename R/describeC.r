@@ -21,6 +21,9 @@
 #'   describeC(x=list(angry.about.things, approve.cong), w=wt, data=nes)
 #'   }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Generate Descriptive Statistics with RCPA3 Package's describeC Function](https://www.youtube.com/watch?v=QbMlUgwG1H4) 17:40  
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapter 2. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp. 39-55. ISBN-13: 978-1506379616; ISBN-10: 150637961.

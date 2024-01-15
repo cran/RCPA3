@@ -30,6 +30,14 @@ A data frame of sorted observations.
 \description{
 Returns case-level information in order specified by user. You can sort by additional criteria to break ties. Useful for learning about units of analysis and selecting cases for qualitative research designs.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=xdnaFE3kWeU}{Sort and View Case-Level Information with the sortC Function} 12:22
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

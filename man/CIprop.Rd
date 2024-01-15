@@ -36,6 +36,14 @@ Returns a data frame that gives the lower bound, point estimate, and upper bound
 \description{
 Reports the confidence interval of sample proportions in table and plot. Default is 95\% CI but use can raise or lower confidence level.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=uRukzm66BdI}{Confidence Intervals for Sample Proportions with RCPA3's CIprop Function} 18:29
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

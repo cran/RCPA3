@@ -12,6 +12,13 @@ No value returned
 \description{
 A fun, interactive game to practice using R functions. Players must execute functions to make widgets per strict specifications to win the game. The Widget Factory needs your help!
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook Reference}{
 
 \itemize{

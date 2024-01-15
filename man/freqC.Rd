@@ -38,6 +38,14 @@ A frequency distribution table.
 \description{
 Generates frequency distribution table and bar chart to describe distribution of variable values. Based on \code{\link[descr]{freq}} function in descr package.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=NwFB_JLgAko}{Make Frequency Distribution Tables and Bar Charts with RCPA3 Package's freqC Function} 15:33
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

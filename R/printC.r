@@ -14,6 +14,8 @@
 #'    printC(example.table, file=tempfile(fileext = ".html"))
 #' }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook Reference:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapter 1. 
 #' @importFrom knitr kables
@@ -40,7 +42,7 @@ printC <- function(objx, file)
           # check if output file exists, if not, create one with basic css guide for formatting
           if(!file.exists(outputfile)) cat("<head><style> body { margin-left: 5%; margin-right: 5%; font-family: verdana; } h2 { font-size: 22px; } h3 { font-size: 16px; } h4 { font-size: 14px; line-height: 1.1; } p { font-size: 12px; } tr:nth-child(even) { background: #F7F7F7 } </style></head>\n\n", file = outputfile, append = TRUE)            
 
-          if(class(objx) == "knitr_kable")
+          if(isa(objx, "knitr_kable"))
           {
             objx <- gsub("<table>", "<table style=\"border-spacing: 0px; border-collapse: collapse; min-width: 400px;\">", objx)
             objx <- gsub("<th style=\"text-align:left;\">", "<th style=\"text-align: left; font-size: 14px; background-color: #EFEFEF; border-bottom: 1.5px dotted black; padding: 4px;\">", objx)
@@ -56,20 +58,7 @@ printC <- function(objx, file)
             cat("</div><BR>\n", file = outputfile, append = TRUE)
             message(paste("Table appended to", outputfile, location))
           }
-          else if(class(objx) == "character")
-          {
-            objx[1] <- paste("<strong>", objx[1], "</strong>", sep="")
-            # gray tables: background-color:whitesmoke;border:1px solid lightgray;
-            # yellow tables: background-color:#FFFFCC;border:1px solid gold;
-            # blue tables: azure and lightskyblue
-            cat("<div style=\"background-color: white; margin: 10px; padding:0px 10px 0px 10px; display: inline-block; border: 1px solid gray; border-radius: 4px;\">\n<PRE style=\"font-size: 14px;\">", 
-                file = outputfile, append = TRUE)
-            blob <- paste(objx)
-            write(blob, file=outputfile, append=TRUE)
-            cat("</PRE></div><BR>\n", file = outputfile, append = TRUE)
-            message(paste("Output appended to", outputfile, location))
-          }
-          else if(class(objx) == "statement")
+          else if(isa(objx, "statement"))
           {
             objx[1] <- paste("<strong>", objx[1], "</strong>", sep="")
             # gray tables: background-color:whitesmoke;border:1px solid lightgray;
@@ -82,14 +71,14 @@ printC <- function(objx, file)
             cat("</PRE></div><BR>\n", file = outputfile, append = TRUE)
             message(paste("Statement appended to", outputfile, location))
           }
-          else if(class(objx) == "banner.heading")
+          else if(isa(objx, "banner.heading"))
           {
             banner.color <- sample(grDevices::hcl.colors(50, palette="Pastel"), size=1)
             cat("<hr><div style=\"background-color:", banner.color, "; border-radius: 5px; width: 100%; text-align: center; margin: 2px;\"><h2>", objx[2], "</h2></div>\n\n", file = outputfile, append = TRUE)
             # this div closed after notes printed...
             cat("<div style=\"background-color: white; min-height: 280px; position: relative; width: 100%; margin: 0px;\">", file = outputfile, append = TRUE)
           }
-          else if(class(objx) == "call")
+          else if(is.call(objx))
           {
             # <div style=\"background-color: orange; padding: 2px; width: 100%; font-size: 12px; text-align: left;\">
             # "</div>", 
@@ -100,19 +89,32 @@ printC <- function(objx, file)
             cat("<p>----------------<BR><i>Notes:</i> Output generated ", format(Sys.time(), "%a %b %d %X %Y")," with R command RCPA3::", objx, ". </p>", file = outputfile, append = TRUE, sep="")
             # ", citation[2:7], ".
           }
-          else if(class(objx) == "image")
+          else if(isa(objx, "image"))
           {
             # this system should work so long as there's not more than one plot per call
             cat("<div style=\"float: right; text-align: center; position: absolute; top: 0px; right: 0px;\">", file = outputfile, append = TRUE, sep="")
             cat("<A HREF=\"", objx, "\"><img  src=\"", objx, "\" border=0 alt=\"R plot\" width=\"300\"><p>Click to enlarge</p></A></div>", file = outputfile, append = TRUE, sep="")
             message(paste("Image file added to", outputfile, location))
           }
-          else if(class(objx) == "imageonly")
+          else if(isa(objx, "imageonly"))
           {
             cat("<div style=\"text-align: center; width: 100%;\">", file = outputfile, append = TRUE, sep="")
             cat("<img  src=\"", objx, "\" border=0 alt=\"R plot\">", file = outputfile, append = TRUE, sep="")
             cat("</div>", file = outputfile, append = TRUE, sep="")
             message(paste("Image file added to", outputfile, location))
+          }
+          else if(is.character(objx))
+          {
+            objx[1] <- paste("<strong>", objx[1], "</strong>", sep="")
+            # gray tables: background-color:whitesmoke;border:1px solid lightgray;
+            # yellow tables: background-color:#FFFFCC;border:1px solid gold;
+            # blue tables: azure and lightskyblue
+            cat("<div style=\"background-color: white; margin: 10px; padding:0px 10px 0px 10px; display: inline-block; border: 1px solid gray; border-radius: 4px;\">\n<PRE style=\"font-size: 14px;\">", 
+                file = outputfile, append = TRUE)
+            blob <- paste(objx)
+            write(blob, file=outputfile, append=TRUE)
+            cat("</PRE></div><BR>\n", file = outputfile, append = TRUE)
+            message(paste("Output appended to", outputfile, location))
           }
           else 
           {

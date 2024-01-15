@@ -59,6 +59,17 @@ Returns a mean comparison table as a matrix of values.
 \description{
 Mean comparison analysis, options for weighted observations and control variable. Also supports several plotting options for basic mean comparisons and controlled mean comparisons. Can conduct single and two-factor analysis of variance (ANOVA) to test differences among multiple means.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=ZuAsP0ZJuDk}{Make Mean Comparisons with RCPA3's compmeansC Function} 13:20, shows you how to use the RCPA3 Package's compmeansC function to compare values of an interval-level dependent variable across categories of an independent variable.
+\item \href{https://www.youtube.com/watch?v=72ROwE9zGmg}{Plotting Means with RCPA3's compmeansC Function} 20:42
+\item \href{https://www.youtube.com/watch?v=sGiwNUwljLc}{Making Controlled Mean Comparisons with RCPA3's compmeansC Function} 25:46
+\item \href{https://www.youtube.com/watch?v=ssBhlAHWAa4}{Analysis of Variance with RCPA3's compmeansC Function} 8:58
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

@@ -19,6 +19,14 @@ Dataset specified in file argument as a data frame. You must assign this returne
 \description{
 If you don't complete file argument, you will be prompted to select file. Supports dataset file format like Stata, SPSS, Rdata, and csv files. It previews imported data and asks you to confirm before returning a data frame. You must assign the returned data frame to an object to work with it. If \code{getC} doesn't support a file type, it may suggest other functions and packages for importing that type of file.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://youtu.be/t3UhWDGqkSc}{Importing Data with RCPA3 Package's getC Function}, 18:14
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

@@ -20,6 +20,9 @@
 #'    
 #'    histC(x=states$covid.cases.per1000)
 #'    
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Generate Histograms with RCPA3 PAckages's histC Function](https://www.youtube.com/watch?v=uQEHe8vAORI)   
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapter 2. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp. 39-55. ISBN-13: 978-1506379616; ISBN-10: 150637961.
@@ -134,8 +137,8 @@ histC <- function(x, w, data, breaks, digits=2, printC=FALSE, plot=TRUE,
     if(missing(bar.col)) bar.col <- "gray80"
     
     # calling wtd.hist again this time for the plot
-    weights::wtd.hist(x=x, weight=w, breaks=breaks, plot=T, 
-                      main=main, xlab=xlab, ylab=ylab, col=bar.col,...) 
+    weights::wtd.hist(x=x, weight=w, breaks=breaks, plot=TRUE, 
+                      main=main, xlab=xlab, ylab=ylab, col=bar.col, ...) 
     graphics::box()
     graphics::par(ask=restore.par.ask)
     if(printC==TRUE & k==2) grDevices::dev.off()

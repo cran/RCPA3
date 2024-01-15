@@ -38,6 +38,9 @@
 #'    testmeansC(dv=nes$ft.bigbiz, iv=nes$gender, w=nes$wt)
 #'    }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Testing Means with RCPA3 Package's testmeansC Function](https://www.youtube.com/watch?v=K3sve6O77fY) 12:22   
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapter 9. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp.201-215. ISBN-13: 978-1506379616; ISBN-10: 150637961.

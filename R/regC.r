@@ -30,6 +30,11 @@
 #'   regC(peace.index ~ vdem.edi.score + hdi, data=world, norm.test=TRUE, ncv.test=TRUE)
 #'   }
 #' @export
+#' @section RCPA3 Package Tutorial Videos:
+#' * [Bivariate Regression Analysis with RCPA3 Package's regC Function](https://www.youtube.com/watch?v=53NPD-BGvwU) 10:31   
+#' * [Multiple Regression Analysis with RCPA3 Package's regC Function](https://youtu.be/17Dxg5D3qtQ) 14:55   
+#' * [Analyzing Regression Residuals with RCPA3 Package's regC Function](https://youtu.be/97hoiYuQnl4) 12:41   
+#' * [Complete Playlist of RCPA3 Package Tutorial Videos](https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu), includes video for this function and many more. 
 #' @section Textbook References:
 #' * Philip H. Pollock and Barry C. Edwards, _An R Companion to Political Analysis, 3rd Edition_ (Thousand Oaks, CA: Sage Publications, Forthcoming 2022), Chapters 11, 12, 13. 
 #' * Philip H. Pollock and Barry C. Edwards, _The Essentials of Political Analysis, 6th Edition_ (Thousand Oaks, CA: Sage Publications, 2020), pp. 244-271. ISBN-13: 978-1506379616; ISBN-10: 150637961.

@@ -38,6 +38,14 @@ Returns the confidence interval as a vector of numeric values (the lower and upp
 \description{
 Reports the confidence interval of a sample mean in table and plot. Default is 95\% CI but use can raise or lower confidence level.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=EmU7cQJ_uRM}{Confidence Intervals for Sample Means with RCPA3's CImean Function} 16:16
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{

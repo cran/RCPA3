@@ -36,6 +36,14 @@ The \code{\link[weights]{wtd.cor}} function is imported from the weights package
 \details{
 Makes use of the wtd.cor function, part of the weights package.
 }
+\section{RCPA3 Package Tutorial Videos}{
+
+\itemize{
+\item \href{https://www.youtube.com/watch?v=sYBywL4t1fY}{Correlation Analysis with RCPA3's correlateC Function} 9:01
+\item \href{https://www.youtube.com/playlist?list=PL3jY4WDTUxoNqrxSSQH4q7XPLPYipeNCu}{Complete Playlist of RCPA3 Package Tutorial Videos}, includes video for this function and many more.
+}
+}
+
 \section{Textbook References}{
 
 \itemize{
