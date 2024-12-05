@@ -52,10 +52,10 @@ Prints a table of descriptive statistics for variable(s) specified with x argume
  
   library(RCPA3)
   
-  \donttest{
   # descriptive statistics for qualitative variables
   describeC(x=world$region)
   
+  \dontrun{
   # descriptive statistics for numeric variable
   describeC(x=world$infant.mortality)
   

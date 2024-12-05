@@ -1,4 +1,13 @@
 
+RCPA3 v1.3.1 (Release date: 2024-12-04)
+==============
+
+Changes:
+
+* Fixed transformC function to return numeric class variable with type "dummy" and "dummy.set"
+
+
+
 RCPA3 v1.2.1 (Release date: 2024-01-06)
 ==============
 

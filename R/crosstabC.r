@@ -17,7 +17,7 @@
 #' * "mosaic" for a mosaic plot, 
 #' * "bar", TRUE, or T for a bar plot (default plot)
 #' * FALSE or F to suppress plot. 
-#' @param plot.response (Optional) Set `plot.response="all"` to plot all DV values (for uncontrolled comparisons only).
+#' @param plot.response (Optional) The dv value to be summarized on plot. To combine and plot multiple dv values, use transformC and create dummy variable to be plotted. Set `plot.response="all"` to plot all DV values (for uncontrolled comparisons only).
 #' @param chisq (Optional) Do you want to conduct Chi-Square Test? If z argument specific, Chi-Square Test conducted on dv-iv relationship for each value of z.
 #' @param lambda (Optional) Do you want Lambda reported? If z argument specified, Lambda reported for dv-iv relationship for each value of z.
 #' @param somers (Optional) Do you want Somers' d reported? If z argument specific, Somers' D reported for dv-iv relationship for each value of z.
@@ -31,9 +31,8 @@
 #' @examples  
 #'   library(RCPA3)
 #'   
-#'   \donttest{
+#'   \dontrun{
 #'   crosstabC(dv=nes$death.penalty, iv=nes$partyid3)
-#'   
 #'   # with optional w, data, chisq, somers arguments
 #'   crosstabC(dv=death.penalty, iv=partyid3, w=wt, data=nes, chisq=TRUE, somers=TRUE)
 #'   

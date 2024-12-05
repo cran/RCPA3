@@ -10,7 +10,7 @@
 #'    
 #'    example.table <- freqC(x=world$vdem.4cat, plot=FALSE)
 #'    # running printC will generate a .html file in your working directory
-#' \donttest{
+#' \dontrun{
 #'    printC(example.table, file=tempfile(fileext = ".html"))
 #' }
 #' @export

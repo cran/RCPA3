@@ -16,6 +16,7 @@
 #'    # basic usage
 #'    sortC(id=state, by=abortlaws, data=states)
 #'    
+#' \dontrun{
 #'    # options to limit results and sort in ascending order
 #'    sortC(id=country, by=gini.index, descending=FALSE, limit=10, data=world)
 #'    
@@ -24,6 +25,7 @@
 #'          data=world, confirm=FALSE)
 #'    sortC(id=country, by=vdem.4cat, thenby=gini.index, descending=c(FALSE, TRUE), 
 #'          data=world, confirm=FALSE)
+#'  }
 #' @export
 #' @section RCPA3 Package Tutorial Videos:
 #' * [Sort and View Case-Level Information with the sortC Function](https://www.youtube.com/watch?v=xdnaFE3kWeU) 12:22   

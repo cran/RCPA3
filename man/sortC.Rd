@@ -61,6 +61,7 @@ Returns case-level information in order specified by user. You can sort by addit
    # basic usage
    sortC(id=state, by=abortlaws, data=states)
    
+\dontrun{
    # options to limit results and sort in ascending order
    sortC(id=country, by=gini.index, descending=FALSE, limit=10, data=world)
    
@@ -69,4 +70,5 @@ Returns case-level information in order specified by user. You can sort by addit
          data=world, confirm=FALSE)
    sortC(id=country, by=vdem.4cat, thenby=gini.index, descending=c(FALSE, TRUE), 
          data=world, confirm=FALSE)
+ }
 }

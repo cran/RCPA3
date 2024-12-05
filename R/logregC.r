@@ -16,7 +16,7 @@
 #' @examples 
 #'   library(RCPA3)
 #'   
-#'   \donttest{
+#'   \dontrun{
 #'   # basic usage with variable vectors
 #'   logregC(states$battleground2020 ~ states$vep16.turnout)
 #'   

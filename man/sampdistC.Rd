@@ -58,9 +58,10 @@ The \code{sampdistC} function also generates the confidence interval (default 95
  
   library(RCPA3)
 
-  \donttest{
-  # based on normal distributions
   sampdistC(stat=10, se=1)
+  
+  \dontrun{
+  # based on normal distributions
   sampdistC(stat=10, se=1, plot.cdf=TRUE)
   
   # based on t-distribution with 15 degrees of freedom

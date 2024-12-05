@@ -48,7 +48,7 @@ crosstabC(dv, iv, w, z, data, digits = 2, compact = FALSE, dvlabs, ivlabs,
 \item FALSE or F to suppress plot.
 }}
 
-\item{plot.response}{(Optional) Set \code{plot.response="all"} to plot all DV values (for uncontrolled comparisons only).}
+\item{plot.response}{(Optional) The dv value to be summarized on plot. To combine and plot multiple dv values, use transformC and create dummy variable to be plotted. Set \code{plot.response="all"} to plot all DV values (for uncontrolled comparisons only).}
 
 \item{main}{(Optional) Main label for plot}
 
@@ -98,9 +98,8 @@ This is a workhorse function for analyzing the relationship between two variable
  
   library(RCPA3)
   
-  \donttest{
+  \dontrun{
   crosstabC(dv=nes$death.penalty, iv=nes$partyid3)
-  
   # with optional w, data, chisq, somers arguments
   crosstabC(dv=death.penalty, iv=partyid3, w=wt, data=nes, chisq=TRUE, somers=TRUE)
   

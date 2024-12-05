@@ -74,7 +74,7 @@ Linear regression analysis function with many useful features. Standard output o
 \examples{
   library(RCPA3)
   
-  \donttest{ 
+  \dontrun{ 
   # basic usage
   regC(states$vep20.turnout ~ states$hs.or.more)
    

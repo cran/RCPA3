@@ -67,7 +67,7 @@ Reports the confidence interval of sample proportions in table and plot. Default
 
   CIprop(nes$lifex.knowimmig)
   
-  \donttest{
+  \dontrun{
   # using optional w and data arguments
   CIprop(x=nes$lifex.knowimmig, w=nes$wt)
   CIprop(x=lifex.knowimmig, w=wt, data=nes)

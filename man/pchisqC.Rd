@@ -30,7 +30,7 @@ Compares full and reduced logistic regression models with Chi-Square Test to ass
 \examples{
    library(RCPA3)
    
-   \donttest{
+   \dontrun{
    model_full <- logregC(battleground2020 ~ vep16.turnout + adv.or.more, data=states)
    model_reduced <- logregC(battleground2020 ~ vep16.turnout, data=states)
    

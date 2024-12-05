@@ -21,7 +21,7 @@
 #' @examples 
 #'    library(RCPA3)
 #'    
-#'    \donttest{
+#'    \dontrun{
 #'    # one sample test: x1 variable against hypothesized value (of x2)
 #'    testpropsC(x1=nes$gun.bg.checks, x2=.500, w=nes$wt, response="1. Favor a great deal", 
 #'               xlim=c(0, .2))

@@ -10,10 +10,10 @@
 #' @examples  
 #'   library(RCPA3)
 #'   
-#'   \donttest{
 #'   # descriptive statistics for qualitative variables
 #'   describeC(x=world$region)
 #'   
+#'   \dontrun{
 #'   # descriptive statistics for numeric variable
 #'   describeC(x=world$infant.mortality)
 #'   

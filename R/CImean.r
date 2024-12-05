@@ -19,7 +19,7 @@
 #'   
 #'   CImean(nes$age)
 #'   
-#'   \donttest{
+#'   \dontrun{
 #'   # using optional w, level, and data arguments
 #'   CImean(x=nes$age, w=nes$wt, level=90)
 #'   CImean(x=age, data=nes, level=95)

@@ -68,7 +68,6 @@ transformC = function(type, x, data, response, cutpoints, groups, confirm=TRUE, 
   
   if(type=="dummy")
   {
-    # cat("type is dummy\n")
     # if no response value selected, user should select one
     if(is.null(response)) 
     {
@@ -95,7 +94,7 @@ transformC = function(type, x, data, response, cutpoints, groups, confirm=TRUE, 
     }
     x.transformed <- as.numeric(x %in% response)
     x.transformed[is.na(x)] <- NA
-    x.transformed <- factor(x.transformed, levels=c(0,1))
+    # x.transformed <- factor(x.transformed, levels=c(0,1))
     Hmisc::label(x.transformed) <- paste(x.name, " dummy variable (", paste(response, collapse=", "), " values of ", x.name," coded 1)", sep="")
   }
   
@@ -113,7 +112,7 @@ transformC = function(type, x, data, response, cutpoints, groups, confirm=TRUE, 
     {
       x.transformed <- as.numeric(x == response.options[j])
       x.transformed[is.na(x)] <- NA
-      x.transformed <- factor(x.transformed, levels=c(0,1))
+      # x.transformed <- factor(x.transformed, levels=c(0,1))
       # print(x.transformed)
       Hmisc::label(x.transformed) <- paste(x.name, " dummy variable (", response.options[j], " values of ", x.name," coded 1)", sep="")
       dummy.set[,j] <- x.transformed

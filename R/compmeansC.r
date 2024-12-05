@@ -28,9 +28,10 @@
 #' @examples 
 #'   library(RCPA3)
 #'    
-#'   \donttest{
-#'   # basic usage: dv and iv, variables are vectors
-#'   compmeansC(dv=nes$ft.rep, iv=nes$partyid7)
+#'   compmeansC(dv=nes$ft.rep, iv=nes$partyid7, plot=FALSE)
+#'
+#'   \dontrun{
+#'   # basic usage with a plot
 #'   compmeansC(dv=nes$ft.rep, iv=nes$partyid7, w=nes$wt, plot=TRUE)
 #'   
 #'   # basic usage: data argument used

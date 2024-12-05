@@ -81,7 +81,7 @@ Conducts one and two-sample difference of means tests (t-tests). Options for wei
 \examples{
    library(RCPA3)
    
-   \donttest{ 
+   \dontrun{ 
    # one sample test against hypothesized value
    testmeansC(x1=world$literacy, x2=80)
    

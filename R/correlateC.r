@@ -16,9 +16,9 @@
 #' @examples 
 #'    library(RCPA3)
 #'    
-#'    \donttest{
 #'    correlateC(x=list(abortlaws, women.stateleg), data=states, plot=FALSE)
 #'    
+#'    \dontrun{
 #'    # with weighted observations and inferential statistics
 #'    correlateC(x=list(nes$ft.rep, nes$ft.trump.pre, nes$ft.dem, nes$ft.biden.pre), 
 #'               w=nes$wt, stats=TRUE)
